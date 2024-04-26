@@ -1,0 +1,7 @@
+.button {
+  @apply px-5 py-2 rounded-lg bg-slate-100 text-[#0a2640];
+
+  &:active {
+    box-shadow: inset 0 3px 5px rgba(3, 9, 15, 0.582);
+  }
+}

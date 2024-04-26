@@ -1,0 +1,8 @@
+{
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "semi": false,
+  "endOfLine": "auto",
+  "printWidth": 80
+}

@@ -1,0 +1,32 @@
+.header {
+  @apply flex justify-between p-10 items-center  overflow-hidden;
+  max-width: 1800px;
+  width: 1400px;
+  min-width: 300px;
+  font-weight: 600;
+  font-size: 16px;
+  > div {
+    @apply flex items-center md:items-start;
+    > ol {
+      @apply flex text-wrap;
+      > li {
+        @apply me-10;
+      }
+    }
+    > button {
+      @apply bg-white px-10 py-2 text-[#0A2640] rounded-3xl;
+      transition: all 0.3;
+      border: 2px #fff;
+      &:hover {
+        @apply bg-[#ffffffd8];
+      }
+    }
+
+    > .modalSideBar {
+      @apply bg-[#fff] px-4 py-2 text-[#0A2640] absolute top-[6em] right-[1.2rem];
+      ol > li {
+        border-bottom: solid 1px #0a2640;
+      }
+    }
+  }
+}

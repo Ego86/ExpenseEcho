@@ -1,0 +1,48 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:react/recommended",
+    "prettier",
+    "plugin:prettier/recommended",
+    "next"
+  ],
+  "parserOptions": { "type": "./tsconfig.json", "ecmaVersion": "latest" },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {
+        "react/display-name": "off",
+        "react/require-default-props": "off",
+        "eslint-plugin-vue/require-default-prop": "off",
+        "no-shadow": "off",
+        "eslint@typescript-eslint/no-shadow": "off",
+        "import/no-cycle": "off",
+        "no-unneeded-ternary": "off",
+        "jsx-a11y/label-has-associated-control": "off",
+        "no-console": "warn",
+        "no-var": "warn",
+        "prefer-const": "warn",
+        "no-const-assign": "error",
+        "indent": ["warn", 2],
+        "quotes": ["warn", "double"],
+        "no-duplicate-imports": "warn",
+        "eslint-plugin-import/no-unused-modules": "off",
+        "consistent-return": "off",
+        "linebreak-style": "off",
+        "lines-around-directive": "off",
+        "react-hooks/exhaustive-deps": "off",
+        "@typescript-eslint/quotes": "off",
+        "@typescript-eslint/semi": "off",
+        "react/button-has-type": "off",
+        "@typescript-eslint/space-infix-ops": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "react/function-component-definition": "off",
+        "max-len": ["warn", 80],
+        "no-new": "off"
+      }
+    }
+  ],
+  "plugins": ["prettier"]
+}
