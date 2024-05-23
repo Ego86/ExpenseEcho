@@ -1,4 +1,5 @@
 "use client"
+
 import { useEffect, useState } from "react"
 
 const useWindowSize = () => {
@@ -12,7 +13,7 @@ const useWindowSize = () => {
 
   useEffect(() => {
     if (!isClient) {
-      return // Если код выполняется не в клиентской среде, выходим
+      return
     }
 
     const handleResize = () => {

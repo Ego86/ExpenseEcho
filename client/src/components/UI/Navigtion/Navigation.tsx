@@ -11,7 +11,13 @@ interface ILinks {
   label: string
   href: string
 }
-const Navigation = ({ navLinks, className }: { navLinks: ILinks[], className: string }) => {
+const Navigation = ({
+  navLinks,
+  className,
+}: {
+  navLinks: ILinks[]
+  className: string
+}) => {
   const pathname = usePathname()
 
   return (

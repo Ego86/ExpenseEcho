@@ -1,17 +1,14 @@
-import { DetailedHTMLProps, InputHTMLAttributes, ReactElement } from "react"
+import { DetailedHTMLProps, InputHTMLAttributes } from "react"
 import styles from "./Input.module.scss"
 
-const Input = ({
+function Input({
   type,
   id,
   value,
   onChange,
   placeholder,
   style,
-}: DetailedHTMLProps<
-  InputHTMLAttributes<HTMLInputElement>,
-  HTMLInputElement
->) => {
+}: DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>) {
   return (
     <input
       type={type}

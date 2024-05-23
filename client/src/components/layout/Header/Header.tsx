@@ -8,16 +8,15 @@ import Link from "next/link"
 import Logo from "@/../assets/Logo.svg"
 import styles from "./Header.module.scss"
 
-
 function Header() {
   return (
-    <div className={styles.header}>
+    <header className={styles.header}>
       <Link href="/">
         <Image src={Logo} alt="Logo" width={50} />
       </Link>
       login
       {/* <DynamicNavigation navLinks={navItems} /> */}
-    </div>
+    </header>
   )
 }
 export default Header
